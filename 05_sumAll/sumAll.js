@@ -7,9 +7,9 @@ const sumAll = function(numberA, numberB) {
     const smallNum = Math.min(numberA, numberB);
     let sum = 0;
     
-    for (i = smallNum; i < bigNum; i++){
+    for (i = smallNum; i <= bigNum; i++){
         sum += i;
-        console.log(`adding ${i} to ${sum}`)
+        // console.log(`adding ${i} to ${sum}`)
     }
     return sum;
 
