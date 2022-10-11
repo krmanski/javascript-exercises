@@ -12,10 +12,13 @@ const palindromes = function (string) {
         
 
     }
-    let oldArray = Array.from(string);
-    console.log(oldArray, newArray);
     let reversedString = newArray.join("");
-    console.log(string, reversedString);
+    if (string == reversedString){
+        return true;
+    } else if (string != reversedString){
+        return false;
+    }
+
 }
 
 
