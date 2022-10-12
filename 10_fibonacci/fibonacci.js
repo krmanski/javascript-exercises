@@ -8,23 +8,20 @@ const fibonacci = function(number) {
     for(let i = 1; i <= n; i++){
         if (fib.length < 2){
             fib.push(1);
-            console.log(fib);
+            // console.log(fib);
         } else {
             let addend1 = fib[fib.length -1];
             let addend2 = fib[fib.length -2];
             let step = addend1 + addend2;
-            console.log(`${addend1} + ${addend2}`);
+            // console.log(`${addend1} + ${addend2}`);
             fib.push(step);
-            console.log(fib);
+            // console.log(fib);
         }
-        console.log(fib);
-        console.log(fib[fib.length -1]);
-
-         
-        // let y = x[x.length -2]
+        
     }
 
-    return fib[n];
+    let answer = (fib[fib.length -1]);
+    return answer;
 
 
 };
