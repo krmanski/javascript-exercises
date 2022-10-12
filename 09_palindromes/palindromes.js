@@ -1,7 +1,10 @@
 const palindromes = function (string) {
     //make the arg an array if it is not already
     if ((typeof string) != 'string')  return "ERROR. Please only use a string."  
-    const transArray = Array.from(string);
+    
+    const processedString = string.toUpperCase();
+    console.log(processedString);
+    const transArray = Array.from(processedString);
     
     const newArray = []
     //take each item from the rear of the array and add to new array
@@ -13,9 +16,9 @@ const palindromes = function (string) {
 
     }
     let reversedString = newArray.join("");
-    if (string == reversedString){
+    if (processedString == reversedString){
         return true;
-    } else if (string != reversedString){
+    } else if (processedString != reversedString){
         return false;
     }
 
